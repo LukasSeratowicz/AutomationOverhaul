@@ -1,1 +1,6 @@
-
+Items: {
+	WoodenPistonItem: {
+		DisplayName: Wooden Piston Item
+		Tooltip: ""
+	}
+}
