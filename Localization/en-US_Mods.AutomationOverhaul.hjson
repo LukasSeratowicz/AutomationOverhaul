@@ -98,8 +98,8 @@ Items: {
 			'''
 	}
 
-	MeteorPistonItem: {
-		DisplayName: Meteor Piston
+	MeteoritePistonItem: {
+		DisplayName: Meteorite Piston
 		Tooltip:
 			'''
 			Forged from stellar debris.
@@ -195,5 +195,10 @@ Items: {
 			Celestial technology beyond mortal understanding.
 			Over the moon performance.
 			'''
+	}
+
+	MeteoritePistonItem: {
+		Tooltip: ""
+		DisplayName: Meteorite Piston Item
 	}
 }
