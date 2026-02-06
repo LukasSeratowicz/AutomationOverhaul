@@ -8,9 +8,9 @@ using AutomationOverhaul.Content.Items.Placeable;
 
 namespace AutomationOverhaul.Content.Machines.Pistons
 {
-    public class WoodenPiston : ModTile
+    public class IronPiston : ModTile
     {
-        public override string Texture => "AutomationOverhaul/Assets/Tiles/WoodenPiston";
+        public override string Texture => "AutomationOverhaul/Assets/Tiles/IronPiston";
 
         public override void SetStaticDefaults() {
             Main.tileSolid[Type] = true;
@@ -24,8 +24,9 @@ namespace AutomationOverhaul.Content.Machines.Pistons
             
             HitSound = SoundID.Tink;
 
-            RegisterItemDrop(ModContent.ItemType<WoodenPistonItem>());
+            RegisterItemDrop(ModContent.ItemType<IronPistonItem>());
 
+            // Object Data
             TileObjectData.newTile.Width = 1;
             TileObjectData.newTile.Height = 1;
             TileObjectData.newTile.CoordinateHeights = new int[] { 16 };
@@ -44,20 +45,20 @@ namespace AutomationOverhaul.Content.Machines.Pistons
                 TileEntity.ByPosition.Remove(pos);
             }
 
-            int id = ModContent.GetInstance<WoodenPistonTE>().Place(i, j);
+            int id = ModContent.GetInstance<IronPistonTE>().Place(i, j);
 
             if (id == -1) {
                 Main.NewText($"[Error] Failed to spawn Piston Brain at {i},{j}!", Microsoft.Xna.Framework.Color.Red);
             }
             else {
-                if (TileEntity.ByID.TryGetValue(id, out TileEntity te) && te is WoodenPistonTE piston) {
+                if (TileEntity.ByID.TryGetValue(id, out TileEntity te) && te is IronPistonTE piston) {
                     piston.CooldownTimer = piston.MaxCooldown;
                 }
             }
         }
 
         public override void KillTile(int i, int j, ref bool fail, ref bool effectOnly, ref bool noItem) {
-            ModContent.GetInstance<WoodenPistonTE>().Kill(i, j);
+            ModContent.GetInstance<IronPistonTE>().Kill(i, j);
         }
 
         public static void Rotate(int i, int j) {

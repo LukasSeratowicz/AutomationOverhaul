@@ -7,9 +7,9 @@ using System;
 
 namespace AutomationOverhaul.Content.Items.Placeable
 {
-    public class WoodenPistonItem : ModItem
+    public class IronPistonItem : ModItem
     {
-        public override string Texture => "AutomationOverhaul/Assets/Items/WoodenPistonItem";
+        public override string Texture => "AutomationOverhaul/Assets/Items/IronPistonItem";
 
         public override void SetStaticDefaults() { }
 
@@ -23,7 +23,7 @@ namespace AutomationOverhaul.Content.Items.Placeable
             Item.useTime = 10;
             Item.useStyle = ItemUseStyleID.Swing;
             Item.consumable = true;
-            Item.createTile = ModContent.TileType<WoodenPiston>();
+            Item.createTile = ModContent.TileType<IronPiston>();
             Item.placeStyle = 0;
         }
 
@@ -56,12 +56,12 @@ namespace AutomationOverhaul.Content.Items.Placeable
         public override void AddRecipes() {
             CreateRecipe()
                 .AddIngredient(ItemID.Wood, 10)
-                .AddIngredient(ItemID.CopperBar, 2)
+                .AddIngredient(ItemID.IronBar, 2)
                 .Register();
                 
              CreateRecipe()
                 .AddIngredient(ItemID.Wood, 10)
-                .AddIngredient(ItemID.TinBar, 2)
+                .AddIngredient(ItemID.LeadBar, 2)
                 .Register();
         }
     }

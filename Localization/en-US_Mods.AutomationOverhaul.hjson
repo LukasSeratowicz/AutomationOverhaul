@@ -3,4 +3,9 @@ Items: {
 		DisplayName: Wooden Piston Item
 		Tooltip: ""
 	}
+
+	IronPistonItem: {
+		DisplayName: Iron Piston Item
+		Tooltip: ""
+	}
 }
