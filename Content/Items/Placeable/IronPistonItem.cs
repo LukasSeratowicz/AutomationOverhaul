@@ -19,12 +19,13 @@ namespace AutomationOverhaul.Content.Items.Placeable
             Item.maxStack = 99;
             Item.useTurn = true;
             Item.autoReuse = true;
-            Item.useAnimation = 15;
-            Item.useTime = 10;
+            Item.useAnimation = 36;
+            Item.useTime = 36;
             Item.useStyle = ItemUseStyleID.Swing;
             Item.consumable = true;
             Item.createTile = ModContent.TileType<IronPiston>();
             Item.placeStyle = 0;
+            Item.rare = ItemRarityID.Blue;
         }
 
         public override void UpdateInventory(Player player) {
@@ -55,13 +56,14 @@ namespace AutomationOverhaul.Content.Items.Placeable
 
         public override void AddRecipes() {
             CreateRecipe()
-                .AddIngredient(ItemID.Wood, 10)
-                .AddIngredient(ItemID.IronBar, 2)
+                .AddIngredient(ModContent.ItemType<CopperPistonItem>())
+                .AddIngredient(ItemID.IronBar, 5)
+                .AddTile(TileID.Anvils)
                 .Register();
-                
-             CreateRecipe()
-                .AddIngredient(ItemID.Wood, 10)
-                .AddIngredient(ItemID.LeadBar, 2)
+            CreateRecipe()
+                .AddIngredient(ModContent.ItemType<TinPistonItem>())
+                .AddIngredient(ItemID.IronBar, 5)
+                .AddTile(TileID.Anvils)
                 .Register();
         }
     }

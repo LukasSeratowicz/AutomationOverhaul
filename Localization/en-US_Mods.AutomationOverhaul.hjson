@@ -99,12 +99,8 @@ Items: {
 	}
 
 	MeteoritePistonItem: {
-		DisplayName: Meteorite Piston
-		Tooltip:
-			'''
-			Forged from stellar debris.
-			Make an impact; this tech is out of this world.
-			'''
+		Tooltip: ""
+		DisplayName: Meteorite Piston Item
 	}
 
 	HellstonePistonItem: {
@@ -195,10 +191,5 @@ Items: {
 			Celestial technology beyond mortal understanding.
 			Over the moon performance.
 			'''
-	}
-
-	MeteoritePistonItem: {
-		Tooltip: ""
-		DisplayName: Meteorite Piston Item
 	}
 }

@@ -6,9 +6,10 @@ namespace AutomationOverhaul.Content.Machines.Pistons
 {
     public class WoodenPistonTE : BasePistonTE
     {
-        public override int MaxCooldown => 60;
+        public override int MaxCooldown => 60*60;
         public override int PushDistance => 1;
-        public override bool CanPushMachines => true;
+        public override bool CanPushMachines => false;
+        public override float PitchVariance => 0.1f;
 
         public override bool IsTileValidForEntity(int x, int y) {
             Tile tile = Main.tile[x, y];

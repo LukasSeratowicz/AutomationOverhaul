@@ -136,7 +136,7 @@ namespace AutomationOverhaul.Content.Machines.Pistons
 
         protected void DoJamEffects(Point pos) {
             if (Main.netMode == NetmodeID.Server) return;
-            for (int k = 0; k < 6; k++) {
+            for (int k = 0; k < 16; k++) {
                 Dust d = Dust.NewDustDirect(new Vector2(pos.X * 16, pos.Y * 16), 16, 16, DustID.Torch);
                 d.velocity *= 1.69f; 
                 d.noGravity = true;

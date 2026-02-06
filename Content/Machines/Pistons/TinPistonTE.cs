@@ -4,15 +4,15 @@ using AutomationOverhaul.Content.Machines.Pistons;
 
 namespace AutomationOverhaul.Content.Machines.Pistons
 {
-    public class IronPistonTE : BasePistonTE {
-        public override int MaxCooldown => 30;
-        public override int PushDistance => 2; 
-        public override bool CanPushMachines => true;
+    public class TinPistonTE : BasePistonTE {
+        public override int MaxCooldown => 50*60;
+        public override int PushDistance => 1; 
+        public override bool CanPushMachines => false;
         public override float PitchVariance => 0.1f;
         
         public override bool IsTileValidForEntity(int x, int y) {
             Tile tile = Main.tile[x, y];
-            return tile.HasTile && tile.TileType == ModContent.TileType<IronPiston>();
+            return tile.HasTile && tile.TileType == ModContent.TileType<TinPiston>();
         }
     }
 }

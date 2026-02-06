@@ -19,8 +19,10 @@ namespace AutomationOverhaul.Content.Machines.Pistons
             Main.tileNoAttach[Type] = false;
             Main.tileBlockLight[Type] = true;
 
-            MineResist = 3.0f; 
-            MinPick = 35;
+            MineResist = 1.0f; 
+            MinPick = 0;
+
+            DustType = DustID.WoodFurniture;
             
             HitSound = SoundID.Tink;
 
@@ -57,7 +59,12 @@ namespace AutomationOverhaul.Content.Machines.Pistons
         }
 
         public override void KillTile(int i, int j, ref bool fail, ref bool effectOnly, ref bool noItem) {
-            ModContent.GetInstance<WoodenPistonTE>().Kill(i, j);
+            if (!fail) {
+                 ModContent.GetInstance<WoodenPistonTE>().Kill(i, j);
+            }
+        }
+        public override bool Slope(int i, int j) {
+            return false;
         }
 
         public static void Rotate(int i, int j) {

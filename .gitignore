@@ -1,3 +1,7 @@
 *.xcf
 icon_old.png
 icon_small_old.png
+*.py
+Assets/Items/*.png
+!Assets/Items/*Item*.png
+Assets/Items/*Pre.png

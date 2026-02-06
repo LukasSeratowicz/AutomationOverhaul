@@ -19,14 +19,15 @@ namespace AutomationOverhaul.Content.Machines.Pistons
             Main.tileNoAttach[Type] = false;
             Main.tileBlockLight[Type] = true;
 
-            MineResist = 3.0f; 
+            MineResist = 2.0f; 
             MinPick = 35;
             
+            DustType = DustID.Iron;
+
             HitSound = SoundID.Tink;
 
             RegisterItemDrop(ModContent.ItemType<IronPistonItem>());
 
-            // Object Data
             TileObjectData.newTile.Width = 1;
             TileObjectData.newTile.Height = 1;
             TileObjectData.newTile.CoordinateHeights = new int[] { 16 };
@@ -58,7 +59,12 @@ namespace AutomationOverhaul.Content.Machines.Pistons
         }
 
         public override void KillTile(int i, int j, ref bool fail, ref bool effectOnly, ref bool noItem) {
-            ModContent.GetInstance<IronPistonTE>().Kill(i, j);
+            if (!fail) {
+                ModContent.GetInstance<IronPistonTE>().Kill(i, j);
+            }
+        }
+        public override bool Slope(int i, int j) {
+            return false;
         }
 
         public static void Rotate(int i, int j) {
