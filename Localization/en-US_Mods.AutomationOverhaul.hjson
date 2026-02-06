@@ -1,11 +1,199 @@
 Items: {
 	WoodenPistonItem: {
-		DisplayName: Wooden Piston Item
-		Tooltip: ""
+		DisplayName: Wooden Piston
+		Tooltip:
+			'''
+			Primitive, but it works.
+			It wood go faster if it could.
+			'''
+	}
+
+	CopperPistonItem: {
+		DisplayName: Copper Piston
+		Tooltip:
+			'''
+			Conductive and reliable.
+			Coppers a decent punch for a starter.
+			'''
+	}
+
+	TinPistonItem: {
+		DisplayName: Tin Piston
+		Tooltip:
+			'''
+			Lightweight and cheap.
+			A tin-y bit better than pushing it yourself.
+			'''
 	}
 
 	IronPistonItem: {
-		DisplayName: Iron Piston Item
-		Tooltip: ""
+		DisplayName: Iron Piston
+		Tooltip:
+			'''
+			Standard industrial grade.
+			Iron out your logistics issues with brute force.
+			'''
+	}
+
+	LeadPistonItem: {
+		DisplayName: Lead Piston
+		Tooltip:
+			'''
+			Dense and heavy shielding.
+			Takes the lead in early automation.
+			'''
+	}
+
+	SilverPistonItem: {
+		DisplayName: Silver Piston
+		Tooltip:
+			'''
+			High conductivity for faster signals.
+			Every cloud has a silver lining, usually a moving block.
+			'''
+	}
+
+	TungstenPistonItem: {
+		DisplayName: Tungsten Piston
+		Tooltip:
+			'''
+			Forged from heavy wolfram.
+			Tons of fun for heavy lifting.
+			'''
+	}
+
+	GoldPistonItem: {
+		DisplayName: Gold Piston
+		Tooltip:
+			'''
+			Corrosion resistant and flashy.
+			The gold standard for mid-tier machinery.
+			'''
+	}
+
+	PlatinumPistonItem: {
+		DisplayName: Platinum Piston
+		Tooltip:
+			'''
+			A premium, lustrous finish.
+			A platinum-grade solution to your problems.
+			'''
+	}
+
+	DemonitePistonItem: {
+		DisplayName: Demonite Piston
+		Tooltip:
+			'''
+			Pulsing with dark energy.
+			Demon-strably stronger than earthly metals.
+			'''
+	}
+
+	CrimtanePistonItem: {
+		DisplayName: Crimtane Piston
+		Tooltip:
+			'''
+			Covered in twitching flesh.
+			Bloody hell, it moves fast!
+			'''
+	}
+
+	MeteorPistonItem: {
+		DisplayName: Meteor Piston
+		Tooltip:
+			'''
+			Forged from stellar debris.
+			Make an impact; this tech is out of this world.
+			'''
+	}
+
+	HellstonePistonItem: {
+		DisplayName: Hellstone Piston
+		Tooltip:
+			'''
+			Smelted in the underworld.
+			Pushes with burning passion.
+			'''
+	}
+
+	CobaltPistonItem: {
+		DisplayName: Cobalt Piston
+		Tooltip:
+			'''
+			Ancient lightweight alloy.
+			Don't feel blue, the speed is worth it.
+			'''
+	}
+
+	PalladiumPistonItem: {
+		DisplayName: Palladium Piston
+		Tooltip:
+			'''
+			Rapid mechanical recovery.
+			A pal you can rely on for heavy loads.
+			'''
+	}
+
+	MythrilPistonItem: {
+		DisplayName: Mythril Piston
+		Tooltip:
+			'''
+			Shimmers with magical potential.
+			It's not a myth-ril, it really moves this fast.
+			'''
+	}
+
+	OrichalcumPistonItem: {
+		DisplayName: Orichalcum Piston
+		Tooltip:
+			'''
+			Ancient floral alloy.
+			Time to put the petal to the metal.
+			'''
+	}
+
+	AdamantitePistonItem: {
+		DisplayName: Adamantite Piston
+		Tooltip:
+			'''
+			Sharp, rigid, and unbreakable.
+			Adamant about moving obstacles out of the way.
+			'''
+	}
+
+	TitaniumPistonItem: {
+		DisplayName: Titanium Piston
+		Tooltip:
+			'''
+			Forged from the bones of the earth.
+			A titan of industry that refuses to jam.
+			'''
+	}
+
+	HallowedPistonItem: {
+		DisplayName: Hallowed Piston
+		Tooltip:
+			'''
+			Blessed by the spirits of light.
+			Pushes with divine intervention.
+			'''
+	}
+
+	ChlorophytePistonItem: {
+		DisplayName: Chlorophyte Piston
+		Tooltip:
+			'''
+			Reactive organic metal.
+			Green energy at its absolute finest.
+			'''
+	}
+
+	LuminitePistonItem: {
+		DisplayName: Luminite Piston
+		Tooltip:
+			'''
+			Celestial technology beyond mortal understanding.
+			Over the moon performance.
+			'''
 	}
 }
