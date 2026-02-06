@@ -1,0 +1,3 @@
+displayName = Automation Overhaul
+author = TigerX
+version = 0.01
