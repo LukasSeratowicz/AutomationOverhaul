@@ -1,0 +1,2 @@
+# AutomationOverhaul
+This is a Terraria Mod inspired by Create+ and vanilla redstone farms. The idea is to give players tools, not solutions, and watch them make machines you would have never imagined were possible.
