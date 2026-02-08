@@ -192,4 +192,13 @@ Items: {
 			Over the moon performance.
 			'''
 	}
+
+	Rotator: {
+		DisplayName: Rotator
+		Tooltip:
+			'''
+			Left-click machine blocks to rotate them.
+			"Lefty loosey, righty tighty... or is it the other way?"
+			'''
+	}
 }

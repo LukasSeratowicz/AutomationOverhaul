@@ -9,7 +9,7 @@ namespace AutomationOverhaul.Content.Items.Placeable
 {
     public class ChlorophytePistonItem : ModItem
     {
-        public override string Texture => "AutomationOverhaul/Assets/Items/ChlorophytePistonItem";
+        public override string Texture => "AutomationOverhaul/Assets/Items/Pistons/ChlorophytePistonItem";
 
         public override void SetStaticDefaults() { }
 

@@ -9,7 +9,7 @@ namespace AutomationOverhaul.Content.Items.Placeable
 {
     public class OrichalcumPistonItem : ModItem
     {
-        public override string Texture => "AutomationOverhaul/Assets/Items/OrichalcumPistonItem";
+        public override string Texture => "AutomationOverhaul/Assets/Items/Pistons/OrichalcumPistonItem";
 
         public override void SetStaticDefaults() { }
 

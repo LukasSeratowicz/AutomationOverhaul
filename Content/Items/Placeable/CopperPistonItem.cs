@@ -9,7 +9,7 @@ namespace AutomationOverhaul.Content.Items.Placeable
 {
     public class CopperPistonItem : ModItem
     {
-        public override string Texture => "AutomationOverhaul/Assets/Items/CopperPistonItem";
+        public override string Texture => "AutomationOverhaul/Assets/Items/Pistons/CopperPistonItem";
 
         public override void SetStaticDefaults() { }
 
