@@ -11,12 +11,12 @@ namespace AutomationOverhaul.Content.Items.Tools
         public override string Texture => "AutomationOverhaul/Assets/Items/Tools/Rotator";
 
         public override void SetDefaults() {
-            Item.width = 32; 
-            Item.height = 32;
-            Item.useTime = 10;
-            Item.useAnimation = 10;
+            Item.width = 16; 
+            Item.height = 16;
+            Item.useTime = 20;
+            Item.useAnimation = 20;
             Item.useStyle = ItemUseStyleID.Thrust; 
-            Item.value = 1000;
+            Item.value = 2000;
             Item.rare = ItemRarityID.Blue;
             Item.autoReuse = true; 
         }
