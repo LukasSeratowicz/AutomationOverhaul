@@ -16,7 +16,7 @@ The core philosophy is **Balanced Progression** and **Tools not solutions**. You
 
 | **Pistons in action** | **Rotator Tool** |
 |:---:|:---:|
-| ![Piston GIF (placeholder)](placeholder) | ![Rotator GIF (placeholder)](placeholder) |
+| ![Piston GIF](https://github.com/LukasSeratowicz/AutomationOverhaul/blob/main/loopingPistons.gif) | ![Rotator GIF](https://github.com/LukasSeratowicz/AutomationOverhaul/blob/main/RotatorLooping.gif) |
 | *Pushing a block in an endless loop* | *Rotating machines for convenience* |
 
 ---
