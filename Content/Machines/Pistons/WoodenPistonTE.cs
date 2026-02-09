@@ -6,6 +6,7 @@ namespace AutomationOverhaul.Content.Machines.Pistons
 {
     public class WoodenPistonTE : BasePistonTE
     {
+        public override int TargetTileID => ModContent.TileType<WoodenPiston>();
         public override int MaxCooldown => 60*60;
         public override int PushDistance => 1;
         public override bool CanPushMachines => false;

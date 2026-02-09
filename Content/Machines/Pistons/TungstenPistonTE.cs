@@ -5,6 +5,7 @@ using AutomationOverhaul.Content.Machines.Pistons;
 namespace AutomationOverhaul.Content.Machines.Pistons
 {
     public class TungstenPistonTE : BasePistonTE {
+        public override int TargetTileID => ModContent.TileType<TungstenPiston>();
         public override int MaxCooldown => 30*60;
         public override int PushDistance => 2; 
         public override bool CanPushMachines => true;

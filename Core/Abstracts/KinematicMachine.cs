@@ -7,6 +7,7 @@ namespace AutomationOverhaul.Core.Abstracts
 {
     public abstract class KineticMachine : ModTileEntity
     {
+        public abstract int TargetTileID { get; }
         public int CooldownTimer { get; set; } = 0;
         public bool IsActive { get; set; } = true;
         
@@ -15,8 +16,6 @@ namespace AutomationOverhaul.Core.Abstracts
         public override void Update() {
             if (Main.netMode == NetmodeID.MultiplayerClient) return;
             if (!IsActive) return;
-
-            // REMOVED: WoodenPistonTE.ManageGlobalReset(); <--- This was causing the error
 
             if (CooldownTimer > 0) {
                 CooldownTimer--;
@@ -39,6 +38,16 @@ namespace AutomationOverhaul.Core.Abstracts
         public override void LoadData(TagCompound tag) {
             CooldownTimer = tag.GetInt("timer");
             IsActive = tag.GetBool("active");
+        }
+
+        public override void NetSend(System.IO.BinaryWriter writer) {
+            writer.Write(CooldownTimer);
+            writer.Write(IsActive);
+        }
+
+        public override void NetReceive(System.IO.BinaryReader reader) {
+            CooldownTimer = reader.ReadInt32();
+            IsActive = reader.ReadBoolean();
         }
     }
 }

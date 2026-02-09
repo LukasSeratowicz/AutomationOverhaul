@@ -3,6 +3,7 @@ using Terraria.ID;
 using Terraria.ModLoader;
 using Terraria.DataStructures;
 using AutomationOverhaul.Content.Machines.Pistons; 
+using AutomationOverhaul.Content.Machines.Placers;
 
 namespace AutomationOverhaul.Content.Items.Tools
 {
@@ -31,7 +32,7 @@ namespace AutomationOverhaul.Content.Items.Tools
 
             // Check if the targeted tile is of a type that can be rotated (Machines)
             if (TileEntity.ByPosition.TryGetValue(new Point16(i, j), out TileEntity te)) {
-                if (te is BasePistonTE) {
+                if (te is BasePistonTE || te is BasePlacerTE) {
                     RotateTile(i, j);
                     return true;
                 }

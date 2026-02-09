@@ -5,6 +5,7 @@ using AutomationOverhaul.Content.Machines.Pistons;
 namespace AutomationOverhaul.Content.Machines.Pistons
 {
     public class LeadPistonTE : BasePistonTE {
+        public override int TargetTileID => ModContent.TileType<LeadPiston>();
         public override int MaxCooldown => 40*60;
         public override int PushDistance => 2; 
         public override bool CanPushMachines => true;

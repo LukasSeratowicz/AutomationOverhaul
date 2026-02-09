@@ -5,6 +5,7 @@ using AutomationOverhaul.Content.Machines.Pistons;
 namespace AutomationOverhaul.Content.Machines.Pistons
 {
     public class CopperPistonTE : BasePistonTE {
+        public override int TargetTileID => ModContent.TileType<CopperPiston>();
         public override int MaxCooldown => 50*60;
         public override int PushDistance => 1; 
         public override bool CanPushMachines => false;

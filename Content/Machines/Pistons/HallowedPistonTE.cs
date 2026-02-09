@@ -5,6 +5,7 @@ using AutomationOverhaul.Content.Machines.Pistons;
 namespace AutomationOverhaul.Content.Machines.Pistons
 {
     public class HallowedPistonTE : BasePistonTE {
+        public override int TargetTileID => ModContent.TileType<HallowedPiston>();
         public override int MaxCooldown => 300; //5.0f*60;
         public override int PushDistance => 8; 
         public override bool CanPushMachines => true;

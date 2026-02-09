@@ -5,7 +5,7 @@ using AutomationOverhaul.Content.Machines.Pistons;
 namespace AutomationOverhaul.Content.Machines.Pistons
 {
     public class GoldPistonTE : BasePistonTE {
-        public override int MaxCooldown => 25*60;
+        public override int TargetTileID => ModContent.TileType<GoldPiston>();        public override int MaxCooldown => 25*60;
         public override int PushDistance => 3; 
         public override bool CanPushMachines => true;
         public override float PitchVariance => 0.1f;

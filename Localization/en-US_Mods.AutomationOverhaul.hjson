@@ -201,4 +201,9 @@ Items: {
 			"Lefty loosey, righty tighty... or is it the other way?"
 			'''
 	}
+
+	WoodenPlacerItem: {
+		Tooltip: ""
+		DisplayName: Wooden Placer Item
+	}
 }

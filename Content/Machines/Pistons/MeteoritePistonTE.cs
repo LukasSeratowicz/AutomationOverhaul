@@ -5,6 +5,7 @@ using AutomationOverhaul.Content.Machines.Pistons;
 namespace AutomationOverhaul.Content.Machines.Pistons
 {
     public class MeteoritePistonTE : BasePistonTE {
+        public override int TargetTileID => ModContent.TileType<MeteoritePiston>();
         public override int MaxCooldown => 1200; //20.0f*60;
         public override int PushDistance => 4; 
         public override bool CanPushMachines => true;

@@ -5,6 +5,7 @@ using AutomationOverhaul.Content.Machines.Pistons;
 namespace AutomationOverhaul.Content.Machines.Pistons
 {
     public class HellstonePistonTE : BasePistonTE {
+        public override int TargetTileID => ModContent.TileType<HellstonePiston>();
         public override int MaxCooldown => 1050; //17.5f*60;
         public override int PushDistance => 4; 
         public override bool CanPushMachines => true;

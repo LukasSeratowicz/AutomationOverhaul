@@ -5,6 +5,7 @@ using AutomationOverhaul.Content.Machines.Pistons;
 namespace AutomationOverhaul.Content.Machines.Pistons
 {
     public class DemonitePistonTE : BasePistonTE {
+        public override int TargetTileID => ModContent.TileType<DemonitePiston>();
         public override int MaxCooldown => 1350; //22.5f*60;
         public override int PushDistance => 3; 
         public override bool CanPushMachines => true;

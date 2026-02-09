@@ -5,6 +5,7 @@ using AutomationOverhaul.Content.Machines.Pistons;
 namespace AutomationOverhaul.Content.Machines.Pistons
 {
     public class ChlorophytePistonTE : BasePistonTE {
+        public override int TargetTileID => ModContent.TileType<ChlorophytePiston>();
         public override int MaxCooldown => 180; //3.0f*60;
         public override int PushDistance => 9; 
         public override bool CanPushMachines => true;
