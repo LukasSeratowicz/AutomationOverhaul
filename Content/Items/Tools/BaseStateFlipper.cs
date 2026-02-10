@@ -10,7 +10,7 @@ namespace AutomationOverhaul.Content.Items.Tools
 {
     public abstract class BaseStateFlipper : ModItem
     {
-        public override string Texture => "Terraria/Images/Item_" + ItemID.WireKite;  //todo: replace with custom texture
+        public override string Texture => "Terraria/Images/Item_" + ItemID.WireKite;
         public int Mode = 0; //  0 = Toggle, 1 = Enable (On), 2 = Disable (Off)
         public bool isDragging = false;
         public Point startPoint = Point.Zero;
