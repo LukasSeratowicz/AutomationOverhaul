@@ -168,7 +168,7 @@ namespace AutomationOverhaul.Content.Items.Tools
     public class MeteoriteStateFlipper : BaseStateFlipper
     {
         public override string Texture => "AutomationOverhaul/Assets/Items/Tools/StateFlippers/MeteoriteStateFlipper";
-        public override int MaxRange => 7;
+        public override int MaxRange => 8;
         public override void SetDefaults() {
             base.SetDefaults();
             Item.rare = ItemRarityID.LightRed;
@@ -182,7 +182,7 @@ namespace AutomationOverhaul.Content.Items.Tools
     public class HellstoneStateFlipper : BaseStateFlipper
     {
         public override string Texture => "AutomationOverhaul/Assets/Items/Tools/StateFlippers/HellstoneStateFlipper";
-        public override int MaxRange => 8;
+        public override int MaxRange => 10;
         public override void SetDefaults() {
             base.SetDefaults();
             Item.rare = ItemRarityID.LightRed;
@@ -196,7 +196,7 @@ namespace AutomationOverhaul.Content.Items.Tools
     public class CobaltStateFlipper : BaseStateFlipper
     {
         public override string Texture => "AutomationOverhaul/Assets/Items/Tools/StateFlippers/CobaltStateFlipper";
-        public override int MaxRange => 9;
+        public override int MaxRange => 12;
         public override void SetDefaults() {
             base.SetDefaults();
             Item.rare = ItemRarityID.Pink;
@@ -209,7 +209,7 @@ namespace AutomationOverhaul.Content.Items.Tools
     public class PalladiumStateFlipper : BaseStateFlipper
     {
         public override string Texture => "AutomationOverhaul/Assets/Items/Tools/StateFlippers/PalladiumStateFlipper";
-        public override int MaxRange => 9;
+        public override int MaxRange => 12;
         public override void SetDefaults() {
             base.SetDefaults();
             Item.rare = ItemRarityID.Pink;
@@ -223,7 +223,7 @@ namespace AutomationOverhaul.Content.Items.Tools
     public class MythrilStateFlipper : BaseStateFlipper
     {
         public override string Texture => "AutomationOverhaul/Assets/Items/Tools/StateFlippers/MythrilStateFlipper";
-        public override int MaxRange => 10;
+        public override int MaxRange => 14;
         public override void SetDefaults() {
             base.SetDefaults();
             Item.rare = ItemRarityID.LightPurple;
@@ -237,7 +237,7 @@ namespace AutomationOverhaul.Content.Items.Tools
     public class OrichalcumStateFlipper : BaseStateFlipper
     {
         public override string Texture => "AutomationOverhaul/Assets/Items/Tools/StateFlippers/OrichalcumStateFlipper";
-        public override int MaxRange => 10;
+        public override int MaxRange => 14;
         public override void SetDefaults() {
             base.SetDefaults();
             Item.rare = ItemRarityID.LightPurple;
@@ -252,7 +252,7 @@ namespace AutomationOverhaul.Content.Items.Tools
     public class AdamantiteStateFlipper : BaseStateFlipper
     {
         public override string Texture => "AutomationOverhaul/Assets/Items/Tools/StateFlippers/AdamantiteStateFlipper";
-        public override int MaxRange => 11;
+        public override int MaxRange => 16;
         public override void SetDefaults() {
             base.SetDefaults();
             Item.rare = ItemRarityID.Lime;
@@ -266,7 +266,7 @@ namespace AutomationOverhaul.Content.Items.Tools
     public class TitaniumStateFlipper : BaseStateFlipper
     {
         public override string Texture => "AutomationOverhaul/Assets/Items/Tools/StateFlippers/TitaniumStateFlipper";
-        public override int MaxRange => 11;
+        public override int MaxRange => 16;
         public override void SetDefaults() {
             base.SetDefaults();
             Item.rare = ItemRarityID.Lime;
@@ -281,7 +281,7 @@ namespace AutomationOverhaul.Content.Items.Tools
     public class HallowedStateFlipper : BaseStateFlipper
     {
         public override string Texture => "AutomationOverhaul/Assets/Items/Tools/StateFlippers/HallowedStateFlipper";
-        public override int MaxRange => 13;
+        public override int MaxRange => 20;
         public override void SetDefaults() {
             base.SetDefaults();
             Item.rare = ItemRarityID.Yellow;
@@ -296,7 +296,7 @@ namespace AutomationOverhaul.Content.Items.Tools
     public class ChlorophyteStateFlipper : BaseStateFlipper
     {
         public override string Texture => "AutomationOverhaul/Assets/Items/Tools/StateFlippers/ChlorophyteStateFlipper";
-        public override int MaxRange => 16;
+        public override int MaxRange => 25;
         public override void SetDefaults() {
             base.SetDefaults();
             Item.rare = ItemRarityID.Cyan;
@@ -310,7 +310,7 @@ namespace AutomationOverhaul.Content.Items.Tools
     public class LuminiteStateFlipper : BaseStateFlipper
     {
         public override string Texture => "AutomationOverhaul/Assets/Items/Tools/StateFlippers/LuminiteStateFlipper";
-        public override int MaxRange => 25;
+        public override int MaxRange => 35;
         public override void SetDefaults() {
             base.SetDefaults();
             Item.rare = ItemRarityID.Red;
