@@ -61,8 +61,19 @@ namespace AutomationOverhaul.Content.Items.Tools
 
         public override void AddRecipes() {
             CreateRecipe()
-                .AddIngredient(ItemID.IronBar, 4) 
-                .AddIngredient(ItemID.Wood, 2)
+                .AddIngredient(ItemID.Wood, 25)
+                .AddIngredient(ItemID.Gel, 5)
+                .AddIngredient(ItemID.IronBar, 4)
+                .AddIngredient(ItemID.Chain, 2)
+                .AddIngredient(ItemID.RopeCoil, 1)
+                .AddTile(TileID.Anvils)
+                .Register();
+            CreateRecipe()
+                .AddIngredient(ItemID.Wood, 25)
+                .AddIngredient(ItemID.Gel, 5)
+                .AddIngredient(ItemID.LeadBar, 4)
+                .AddIngredient(ItemID.Chain, 2)
+                .AddIngredient(ItemID.RopeCoil, 1)
                 .AddTile(TileID.Anvils)
                 .Register();
         }
