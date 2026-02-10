@@ -10,7 +10,7 @@ namespace AutomationOverhaul.Content.Machines.Pistons
 {
     public class PalladiumPiston : ModTile
     {
-        public override string Texture => "AutomationOverhaul/Assets/Tiles/PalladiumPiston";
+        public override string Texture => "AutomationOverhaul/Assets/Tiles/Pistons/PalladiumPiston";
 
         public override void SetStaticDefaults() {
             Main.tileSolid[Type] = true;

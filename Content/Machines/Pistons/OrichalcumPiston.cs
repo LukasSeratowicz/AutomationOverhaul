@@ -10,7 +10,7 @@ namespace AutomationOverhaul.Content.Machines.Pistons
 {
     public class OrichalcumPiston : ModTile
     {
-        public override string Texture => "AutomationOverhaul/Assets/Tiles/OrichalcumPiston";
+        public override string Texture => "AutomationOverhaul/Assets/Tiles/Pistons/OrichalcumPiston";
 
         public override void SetStaticDefaults() {
             Main.tileSolid[Type] = true;

@@ -10,12 +10,12 @@ namespace AutomationOverhaul.Content.Machines.Pistons
 {
     public class LuminitePiston : ModTile
     {
-        public override string Texture => "AutomationOverhaul/Assets/Tiles/LuminitePiston";
+        public override string Texture => "AutomationOverhaul/Assets/Tiles/Pistons/LuminitePiston";
 
         public override void SetStaticDefaults() {
             Main.tileSolid[Type] = true;
             Main.tileFrameImportant[Type] = true;
-            Main.tileLavaDeath[Type] = true;
+            Main.tileLavaDeath[Type] = false;
             Main.tileNoAttach[Type] = false;
             Main.tileBlockLight[Type] = true;
 

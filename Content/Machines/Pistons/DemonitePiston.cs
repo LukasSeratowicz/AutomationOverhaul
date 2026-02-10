@@ -10,7 +10,7 @@ namespace AutomationOverhaul.Content.Machines.Pistons
 {
     public class DemonitePiston : ModTile
     {
-        public override string Texture => "AutomationOverhaul/Assets/Tiles/DemonitePiston";
+        public override string Texture => "AutomationOverhaul/Assets/Tiles/Pistons/DemonitePiston";
 
         public override void SetStaticDefaults() {
             Main.tileSolid[Type] = true;

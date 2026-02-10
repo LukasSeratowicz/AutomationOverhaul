@@ -341,4 +341,109 @@ Items: {
 		DisplayName: Titanium State Flipper
 		Tooltip: ""
 	}
+
+	AdamantitePlacerItem: {
+		DisplayName: Adamantite Placer Item
+		Tooltip: ""
+	}
+
+	ChlorophytePlacerItem: {
+		DisplayName: Chlorophyte Placer Item
+		Tooltip: ""
+	}
+
+	CobaltPlacerItem: {
+		DisplayName: Cobalt Placer Item
+		Tooltip: ""
+	}
+
+	CopperPlacerItem: {
+		DisplayName: Copper Placer Item
+		Tooltip: ""
+	}
+
+	CrimtanePlacerItem: {
+		DisplayName: Crimtane Placer Item
+		Tooltip: ""
+	}
+
+	DemonitePlacerItem: {
+		DisplayName: Demonite Placer Item
+		Tooltip: ""
+	}
+
+	GoldPlacerItem: {
+		DisplayName: Gold Placer Item
+		Tooltip: ""
+	}
+
+	HallowedPlacerItem: {
+		DisplayName: Hallowed Placer Item
+		Tooltip: ""
+	}
+
+	HellstonePlacerItem: {
+		DisplayName: Hellstone Placer Item
+		Tooltip: ""
+	}
+
+	IronPlacerItem: {
+		DisplayName: Iron Placer Item
+		Tooltip: ""
+	}
+
+	LeadPlacerItem: {
+		DisplayName: Lead Placer Item
+		Tooltip: ""
+	}
+
+	LuminitePlacerItem: {
+		DisplayName: Luminite Placer Item
+		Tooltip: ""
+	}
+
+	MeteoritePlacerItem: {
+		DisplayName: Meteorite Placer Item
+		Tooltip: ""
+	}
+
+	MythrilPlacerItem: {
+		DisplayName: Mythril Placer Item
+		Tooltip: ""
+	}
+
+	OrichalcumPlacerItem: {
+		DisplayName: Orichalcum Placer Item
+		Tooltip: ""
+	}
+
+	PalladiumPlacerItem: {
+		DisplayName: Palladium Placer Item
+		Tooltip: ""
+	}
+
+	PlatinumPlacerItem: {
+		DisplayName: Platinum Placer Item
+		Tooltip: ""
+	}
+
+	SilverPlacerItem: {
+		DisplayName: Silver Placer Item
+		Tooltip: ""
+	}
+
+	TinPlacerItem: {
+		DisplayName: Tin Placer Item
+		Tooltip: ""
+	}
+
+	TitaniumPlacerItem: {
+		DisplayName: Titanium Placer Item
+		Tooltip: ""
+	}
+
+	TungstenPlacerItem: {
+		DisplayName: Tungsten Placer Item
+		Tooltip: ""
+	}
 }

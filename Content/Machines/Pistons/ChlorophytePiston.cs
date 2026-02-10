@@ -10,7 +10,7 @@ namespace AutomationOverhaul.Content.Machines.Pistons
 {
     public class ChlorophytePiston : ModTile
     {
-        public override string Texture => "AutomationOverhaul/Assets/Tiles/ChlorophytePiston";
+        public override string Texture => "AutomationOverhaul/Assets/Tiles/Pistons/ChlorophytePiston";
 
         public override void SetStaticDefaults() {
             Main.tileSolid[Type] = true;

@@ -7,9 +7,9 @@ using System;
 
 namespace AutomationOverhaul.Content.Items.Placeable
 {
-    public class WoodenPlacerItem : ModItem
+    public class TinPlacerItem : ModItem
     {
-        public override string Texture => "AutomationOverhaul/Assets/Items/Placers/WoodenPlacerItem";
+        public override string Texture => "AutomationOverhaul/Assets/Items/Placers/TinPlacerItem";
 
         public override void SetStaticDefaults() { }
 
@@ -19,12 +19,13 @@ namespace AutomationOverhaul.Content.Items.Placeable
             Item.maxStack = 99;
             Item.useTurn = true;
             Item.autoReuse = true;
-            Item.useAnimation = 15;
-            Item.useTime = 15;
             Item.useStyle = ItemUseStyleID.Swing;
             Item.consumable = true;
-            Item.createTile = ModContent.TileType<WoodenPlacer>();
+            Item.createTile = ModContent.TileType<TinPlacer>();
             Item.placeStyle = 0; // Default to Up
+            //editable:
+            Item.useAnimation = 38;
+            Item.useTime = 38;
             Item.rare = ItemRarityID.White;
         }
 
@@ -35,7 +36,7 @@ namespace AutomationOverhaul.Content.Items.Placeable
             Vector2 dir = Main.MouseWorld - player.Center;
             int style = 0;
 
-            // Logic copied 1:1 from WoodenPistonItem
+            // Logic copied 1:1 from TinPistonItem
             if (Math.Abs(dir.Y) > Math.Abs(dir.X) * 1.5f) {
                 // Vertical (Mouse Angle)
                 style = dir.Y > 0 ? 2 : 0; // Down : Up
@@ -58,10 +59,8 @@ namespace AutomationOverhaul.Content.Items.Placeable
 
         public override void AddRecipes() {
             CreateRecipe()
-                .AddIngredient(ItemID.Wood, 30)
-                .AddIngredient(ItemID.Cobweb, 10)
-                .AddIngredient(ItemID.Gel, 5)
-                .AddIngredient(ItemID.Mushroom, 1)
+                .AddIngredient(ModContent.ItemType<WoodenPlacerItem>())
+                .AddIngredient(ItemID.TinBar, 3)
                 .AddTile(TileID.WorkBenches)
                 .Register();
         }

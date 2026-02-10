@@ -10,7 +10,7 @@ namespace AutomationOverhaul.Content.Machines.Placers
 {
     public class WoodenPlacer : ModTile
     {
-        public override string Texture => "AutomationOverhaul/Assets/Tiles/WoodenPlacer";
+        public override string Texture => "AutomationOverhaul/Assets/Tiles/Placers/WoodenPlacer";
 
         public override void SetStaticDefaults() {
             Main.tileSolid[Type] = true;
@@ -19,9 +19,9 @@ namespace AutomationOverhaul.Content.Machines.Placers
             Main.tileNoAttach[Type] = false;
             Main.tileBlockLight[Type] = true;
 
-            MineResist = 2.0f;
+            MineResist = 1.0f;
             MinPick = 0;
-            HitSound = SoundID.Dig; 
+            HitSound = SoundID.Dig;
             DustType = DustID.WoodFurniture;
 
             RegisterItemDrop(ModContent.ItemType<WoodenPlacerItem>());

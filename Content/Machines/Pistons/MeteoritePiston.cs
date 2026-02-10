@@ -10,7 +10,7 @@ namespace AutomationOverhaul.Content.Machines.Pistons
 {
     public class MeteoritePiston : ModTile
     {
-        public override string Texture => "AutomationOverhaul/Assets/Tiles/MeteoritePiston";
+        public override string Texture => "AutomationOverhaul/Assets/Tiles/Pistons/MeteoritePiston";
 
         public override void SetStaticDefaults() {
             Main.tileSolid[Type] = true;

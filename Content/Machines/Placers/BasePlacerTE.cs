@@ -56,50 +56,74 @@ namespace AutomationOverhaul.Content.Machines.Placers
         }
 
         public override void SaveData(TagCompound tag) {
+            tag["Timer"] = CooldownTimer;
+            tag["IsActive"] = IsActive;
             tag["Item"] = ItemIO.Save(internalItem);
         }
 
         public override void LoadData(TagCompound tag) {
+            if (tag.ContainsKey("IsActive")) IsActive = tag.GetBool("IsActive");
             internalItem = ItemIO.Load(tag.GetCompound("Item"));
+            if (tag.ContainsKey("Timer")) {
+                CooldownTimer = tag.GetInt("Timer");
+            }
         }
         
         public override void Update() {
-             if (Main.netMode == NetmodeID.MultiplayerClient) return;
-             if (!IsActive) return;
-             if (CooldownTimer > 0) { CooldownTimer--; return; }
-             
-             if (OnProcess()) {
-                 CooldownTimer = MaxCooldown;
-                 NetMessage.SendData(MessageID.TileEntitySharing, -1, -1, null, ID, Position.X, Position.Y);
-             }
-        }
-        
-        protected override bool OnProcess() {
-            if (internalItem.IsAir || internalItem.createTile < TileID.Dirt) return false;
+            if (Main.netMode == NetmodeID.MultiplayerClient) return;
+
+            if (!IsActive || internalItem.IsAir || internalItem.createTile < TileID.Dirt) {
+                CooldownTimer = MaxCooldown;
+                return;
+            }
 
             Tile tile = Main.tile[Position.X, Position.Y];
             Vector2 dir = GetDirectionFromFrame(tile);
             int targetX = Position.X + (int)dir.X;
             int targetY = Position.Y + (int)dir.Y;
 
-            if (!WorldGen.InWorld(targetX, targetY)) return false;
-
-            if (Main.tile[targetX, targetY].HasTile) {
-                CooldownTimer = MaxCooldown; 
-                return false; 
+            if (WorldGen.InWorld(targetX, targetY)) {
+                if (Main.tile[targetX, targetY].HasTile) {
+                    // BLOCKED: Reset timer to Max and STOP.
+                    CooldownTimer = MaxCooldown;
+                    return; 
+                }
             }
+
+            if (CooldownTimer > 0) {
+                CooldownTimer--;
+                return;
+            }
+
+            bool success = OnProcess();
+            CooldownTimer = MaxCooldown;
+
+            if (success) {
+                NetMessage.SendData(MessageID.TileEntitySharing, -1, -1, null, ID, Position.X, Position.Y);
+            }
+        }
+
+        protected override bool OnProcess() {
+            Tile tile = Main.tile[Position.X, Position.Y];
+            Vector2 dir = GetDirectionFromFrame(tile);
+            int targetX = Position.X + (int)dir.X;
+            int targetY = Position.Y + (int)dir.Y;
+
+            if (!WorldGen.InWorld(targetX, targetY)) return false;
+            
+            // Double check obstruction (Just in case)
+            if (Main.tile[targetX, targetY].HasTile) return false;
 
             bool success = WorldGen.PlaceTile(targetX, targetY, internalItem.createTile, false, false, -1, internalItem.placeStyle);
 
             if (success) {
-                // "Undo" Check (Security measure against cheats/bugs)
+                // Anti-recursion / Undo logic
                 if (!CanPlaceMachines) {
                     if (TileEntity.ByPosition.TryGetValue(new Point16(targetX, targetY), out TileEntity te)) {
                         if (te is BasePistonTE || te is BasePlacerTE) {
-                            WorldGen.KillTile(targetX, targetY, false, false, true);
-                            Terraria.Audio.SoundEngine.PlaySound(SoundID.Tink, new Vector2(targetX * 16, targetY * 16));
-                            CooldownTimer = MaxCooldown;
-                            return false;
+                             WorldGen.KillTile(targetX, targetY, false, false, true);
+                             Terraria.Audio.SoundEngine.PlaySound(SoundID.Tink, new Vector2(targetX * 16, targetY * 16));
+                             return false;
                         }
                     }
                 }

@@ -10,12 +10,12 @@ namespace AutomationOverhaul.Content.Machines.Pistons
 {
     public class HellstonePiston : ModTile
     {
-        public override string Texture => "AutomationOverhaul/Assets/Tiles/HellstonePiston";
+        public override string Texture => "AutomationOverhaul/Assets/Tiles/Pistons/HellstonePiston";
 
         public override void SetStaticDefaults() {
             Main.tileSolid[Type] = true;
             Main.tileFrameImportant[Type] = true;
-            Main.tileLavaDeath[Type] = true;
+            Main.tileLavaDeath[Type] = false;
             Main.tileNoAttach[Type] = false;
             Main.tileBlockLight[Type] = true;
 
