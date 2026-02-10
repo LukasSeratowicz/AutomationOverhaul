@@ -251,4 +251,94 @@ Items: {
 		DisplayName: Wooden State Flipper
 		Tooltip: ""
 	}
+
+	CrimtaneStateFlipper: {
+		DisplayName: Crimtane State Flipper
+		Tooltip: ""
+	}
+
+	DemoniteStateFlipper: {
+		DisplayName: Demonite State Flipper
+		Tooltip: ""
+	}
+
+	GoldStateFlipper: {
+		DisplayName: Gold State Flipper
+		Tooltip: ""
+	}
+
+	LeadStateFlipper: {
+		DisplayName: Lead State Flipper
+		Tooltip: ""
+	}
+
+	PlatinumStateFlipper: {
+		DisplayName: Platinum State Flipper
+		Tooltip: ""
+	}
+
+	SilverStateFlipper: {
+		DisplayName: Silver State Flipper
+		Tooltip: ""
+	}
+
+	TinStateFlipper: {
+		DisplayName: Tin State Flipper
+		Tooltip: ""
+	}
+
+	TungstenStateFlipper: {
+		DisplayName: Tungsten State Flipper
+		Tooltip: ""
+	}
+
+	AdamantiteStateFlipper: {
+		DisplayName: Adamantite State Flipper
+		Tooltip: ""
+	}
+
+	ChlorophyteStateFlipper: {
+		DisplayName: Chlorophyte State Flipper
+		Tooltip: ""
+	}
+
+	CobaltStateFlipper: {
+		DisplayName: Cobalt State Flipper
+		Tooltip: ""
+	}
+
+	HallowedStateFlipper: {
+		DisplayName: Hallowed State Flipper
+		Tooltip: ""
+	}
+
+	HellstoneStateFlipper: {
+		DisplayName: Hellstone State Flipper
+		Tooltip: ""
+	}
+
+	MeteoriteStateFlipper: {
+		DisplayName: Meteorite State Flipper
+		Tooltip: ""
+	}
+
+	MythrilStateFlipper: {
+		DisplayName: Mythril State Flipper
+		Tooltip: ""
+	}
+
+	OrichalcumStateFlipper: {
+		DisplayName: Orichalcum State Flipper
+		Tooltip: ""
+	}
+
+	PalladiumStateFlipper: {
+		DisplayName: Palladium State Flipper
+		Tooltip: ""
+	}
+
+	TitaniumStateFlipper: {
+		DisplayName: Titanium State Flipper
+		Tooltip: ""
+	}
 }

@@ -72,7 +72,7 @@ namespace AutomationOverhaul.Content.Items.Tools
             return false;
         }
         public override void ModifyTooltips(System.Collections.Generic.List<TooltipLine> tooltips) {
-            tooltips.Add(new TooltipLine(Mod, "Controls", "Left click to Select\nRight click to Switch Mode"));
+            tooltips.Add(new TooltipLine(Mod, "Controls", "Controles Machines states ON/OFF\nLeft click to Select\nRight click to Switch Mode"));
             tooltips.Add(new TooltipLine(Mod, "Area", $"Area: {MaxRange}x{MaxRange}"));
 
             string modeName = "";
