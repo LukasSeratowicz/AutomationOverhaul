@@ -446,6 +446,11 @@ Items: {
 		DisplayName: Tungsten Placer Item
 		Tooltip: ""
 	}
+
+	WoodenBreakerItem: {
+		DisplayName: Wooden Breaker Item
+		Tooltip: "Periodically breaks blocks.\nYou have to put a pickaxe into it."
+	}
 }
 
 Configs: {
@@ -458,3 +463,5 @@ Configs: {
 		}
 	}
 }
+
+Tiles.WoodenBreaker.MapEntry: Wooden Breaker
