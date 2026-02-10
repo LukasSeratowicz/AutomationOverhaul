@@ -447,3 +447,14 @@ Items: {
 		Tooltip: ""
 	}
 }
+
+Configs: {
+	AutomationOverhaulConfig: {
+		DisplayName: Automation Overhaul Config
+
+		DebugMode: {
+			Label: Debug Mode
+			Tooltip: Shows cooldown timers and state for machines.
+		}
+	}
+}
