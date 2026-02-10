@@ -52,13 +52,8 @@ namespace AutomationOverhaul.Content.Machines.Breakers
         
         public override bool CanPlace(int i, int j) {
             Tile tile = Main.tile[i, j];
-            if (tile.HasTile && Main.tileSolid[tile.TileType] && !Main.tileCut[tile.TileType]) {
-                return false;
-            }
-            if (HasSolidNeighbor(i, j) || Main.tile[i, j].WallType > WallID.None) {
-                return true;
-            }
-            return false;
+            if (tile.HasTile && Main.tileSolid[tile.TileType] && !Main.tileCut[tile.TileType]) return false;
+            return HasSolidNeighbor(i, j) || Main.tile[i, j].WallType > WallID.None;
         }
 
         private bool HasSolidNeighbor(int x, int y) {
@@ -77,37 +72,49 @@ namespace AutomationOverhaul.Content.Machines.Breakers
 
         public override bool RightClick(int i, int j) {
             if (TileEntity.ByPosition.TryGetValue(new Point16(i, j), out TileEntity te) && te is BaseBreakerTE breaker) {
-                Player player = Main.LocalPlayer;
-                Item heldItem = player.HeldItem;
+                return HandleInteraction(i, j, breaker);
+            }
+            return false;
+        }
 
-                if (!heldItem.IsAir && heldItem.pick > 0) {
-                    if (!breaker.IsItemValidForSlot(heldItem)) return true;
+        private bool HandleInteraction(int i, int j, BaseBreakerTE breaker) {
+            Player player = Main.LocalPlayer;
+            Item heldItem = player.HeldItem;
 
-                    if (breaker.internalItem.IsAir) {
-                        breaker.internalItem = heldItem.Clone();
-                        heldItem.TurnToAir();
-                        Terraria.Audio.SoundEngine.PlaySound(SoundID.Grab, new Vector2(i * 16, j * 16));
-                    }
-                    else {
-                        Item temp = breaker.internalItem.Clone();
-                        breaker.internalItem = heldItem.Clone();
-                        heldItem.SetDefaults(temp.type); 
-                        heldItem.Prefix(temp.prefix);
-                        Terraria.Audio.SoundEngine.PlaySound(SoundID.Grab, new Vector2(i * 16, j * 16));
-                    }
+            if (!heldItem.IsAir && (heldItem.pick > 0 || heldItem.axe > 0)) {
+                
+                if (!breaker.IsItemValidForSlot(heldItem)) return true;
+
+                if (breaker.internalItem.IsAir) {
+                    breaker.internalItem = heldItem.Clone();
+                    heldItem.TurnToAir();
+                    Terraria.Audio.SoundEngine.PlaySound(SoundID.Grab, new Vector2(i * 16, j * 16));
                 }
-                else if (heldItem.IsAir && !breaker.internalItem.IsAir) {
-                    player.QuickSpawnItem(new EntitySource_TileInteraction(player, i, j), breaker.internalItem, breaker.internalItem.stack);
-                    breaker.internalItem.TurnToAir();
+                else {
+                    Item temp = breaker.internalItem.Clone();
+                    breaker.internalItem = heldItem.Clone();
+                    heldItem.SetDefaults(temp.type); 
+                    heldItem.Prefix(temp.prefix);
                     Terraria.Audio.SoundEngine.PlaySound(SoundID.Grab, new Vector2(i * 16, j * 16));
                 }
                 
                 breaker.CalculateSpeed();
                 breaker.CooldownTimer = breaker.MaxCooldown;
-                
                 NetMessage.SendData(MessageID.TileEntitySharing, -1, -1, null, breaker.ID, i, j);
                 return true;
             }
+            
+            // 2. EXTRACT (Empty Hand)
+            else if (heldItem.IsAir && !breaker.internalItem.IsAir) {
+                player.QuickSpawnItem(new EntitySource_TileInteraction(player, i, j), breaker.internalItem, breaker.internalItem.stack);
+                breaker.internalItem.TurnToAir();
+                Terraria.Audio.SoundEngine.PlaySound(SoundID.Grab, new Vector2(i * 16, j * 16));
+                
+                breaker.CalculateSpeed();
+                NetMessage.SendData(MessageID.TileEntitySharing, -1, -1, null, breaker.ID, i, j);
+                return true;
+            }
+
             return false;
         }
 
@@ -115,7 +122,7 @@ namespace AutomationOverhaul.Content.Machines.Breakers
             if (!fail) {
                 if (TileEntity.ByPosition.TryGetValue(new Point16(i, j), out TileEntity te) && te is BaseBreakerTE breaker) {
                     if (!breaker.internalItem.IsAir) {
-                        Item.NewItem(new EntitySource_TileBreak(i, j), i * 16, j * 16, 16, 16, breaker.internalItem.type, breaker.internalItem.stack);
+                        Item.NewItem(new EntitySource_TileBreak(i, j), i * 16, j * 16, 16, 16, breaker.internalItem);
                     }
                 }
                 ModContent.GetInstance<WoodenBreakerTE>().Kill(i, j);

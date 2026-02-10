@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AutomationOverhaul")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1f6f41a81a443471310ca8a5437b073c475f6f1b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bc46e0f43085985f7ba3861d71b187b24e126dc5")]
 [assembly: System.Reflection.AssemblyProductAttribute("AutomationOverhaul")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AutomationOverhaul")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -449,7 +449,21 @@ Items: {
 
 	WoodenBreakerItem: {
 		DisplayName: Wooden Breaker Item
-		Tooltip: "Periodically breaks blocks.\nYou have to put a pickaxe into it."
+		Tooltip:
+			'''
+			Periodically breaks blocks.
+			You have to put a pickaxe into it.
+			'''
+	}
+
+	RangeTuner: {
+		DisplayName: Range Tuner
+		Tooltip:
+			'''
+			Left Click to change Range.
+			Supported Machines:
+			- Breaker
+			'''
 	}
 }
 

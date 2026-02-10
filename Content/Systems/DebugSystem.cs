@@ -7,6 +7,7 @@ using Terraria.UI.Chat;
 using Terraria.GameContent;
 using AutomationOverhaul.Content.Machines.Placers;
 using AutomationOverhaul.Content.Machines.Pistons;
+using AutomationOverhaul.Content.Machines.Breakers;
 using AutomationOverhaul.Core.Abstracts;
 
 namespace AutomationOverhaul.Content.Systems
@@ -71,6 +72,20 @@ namespace AutomationOverhaul.Content.Systems
                             color = Color.Cyan; // Idle (Nothing to push)
                         } else {
                             color = Color.Lime; // Working (Ready to push)
+                        }
+                    }
+                    else if (machine is BaseBreakerTE breaker) {
+                        int range = System.Math.Min(breaker.CurrentRangeSetting, breaker.GetMaxPossibleRange());
+                        int breakX = machine.Position.X + (dirX * range);
+                        int breakY = machine.Position.Y + (dirY * range);
+                        bool breakTargetExists = WorldGen.InWorld(breakX, breakY) && Main.tile[breakX, breakY].HasTile;
+
+                        if (breaker.internalItem.IsAir || breaker.internalItem.pick <= 0) {
+                            color = Color.Cyan; // Idle (No Tool)
+                        } else if (!breakTargetExists) {
+                            color = Color.Orange; // Waiting (No Block)
+                        } else {
+                            color = Color.Lime; // Working (Mining)
                         }
                     }
                 }
