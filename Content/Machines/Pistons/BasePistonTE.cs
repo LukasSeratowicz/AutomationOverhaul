@@ -17,7 +17,7 @@ namespace AutomationOverhaul.Content.Machines.Pistons
 
         public override void Update() {
             if (Main.netMode == NetmodeID.MultiplayerClient) return;
-            if (!IsActive) return;
+            if (!IsActive) {CooldownTimer = MaxCooldown; return;}
 
             Tile tile = Main.tile[Position.X, Position.Y];
             Vector2 dir = GetDirectionFromFrame(tile);
