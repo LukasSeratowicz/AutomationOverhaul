@@ -206,4 +206,49 @@ Items: {
 		Tooltip: ""
 		DisplayName: Wooden Placer Item
 	}
+
+	MachineWand: {
+		DisplayName: Machine Wand
+		Tooltip: ""
+	}
+
+	IronWand: {
+		DisplayName: Iron Wand
+		Tooltip: ""
+	}
+
+	CopperWand: {
+		Tooltip: ""
+		DisplayName: Copper Wand
+	}
+
+	LuminiteWand: {
+		DisplayName: Luminite Wand
+		Tooltip: ""
+	}
+
+	WoodenWand: {
+		DisplayName: Wooden Wand
+		Tooltip: ""
+	}
+
+	IronStateFlipper: {
+		DisplayName: Iron State Flipper
+		Tooltip: ""
+	}
+
+	CopperStateFlipper: {
+		Tooltip: ""
+		DisplayName: Copper State Flipper
+	}
+
+	LuminiteStateFlipper: {
+		DisplayName: Luminite State Flipper
+		Tooltip: ""
+	}
+
+	WoodenStateFlipper: {
+		DisplayName: Wooden State Flipper
+		Tooltip: ""
+	}
 }

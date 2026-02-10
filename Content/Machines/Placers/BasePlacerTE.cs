@@ -65,6 +65,7 @@ namespace AutomationOverhaul.Content.Machines.Placers
         
         public override void Update() {
              if (Main.netMode == NetmodeID.MultiplayerClient) return;
+             if (!IsActive) return;
              if (CooldownTimer > 0) { CooldownTimer--; return; }
              
              if (OnProcess()) {
