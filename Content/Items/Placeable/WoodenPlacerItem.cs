@@ -58,9 +58,10 @@ namespace AutomationOverhaul.Content.Items.Placeable
 
         public override void AddRecipes() {
             CreateRecipe()
-                .AddIngredient(ItemID.Wood, 50)
-                .AddIngredient(ItemID.StoneBlock, 100)
-                .AddIngredient(ItemID.Acorn, 10)
+                .AddIngredient(ItemID.Wood, 30)
+                .AddIngredient(ItemID.Cobweb, 10)
+                .AddIngredient(ItemID.Gel, 5)
+                .AddIngredient(ItemID.Mushroom, 1)
                 .AddTile(TileID.WorkBenches)
                 .Register();
         }
