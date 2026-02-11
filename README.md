@@ -47,15 +47,17 @@ Performance scales drastically. Do not expect end-game speed from a Wooden Pisto
 ## 📝 Roadmap / To-Do List
 
 ### Engineering Tools
-- [x] **Rotator (Wrench):** A smart tool that detects `Machine` entities. Allows rotating placed machines without breaking them or resetting their internal buffers.
-- [ ] **Configurator (name placeholder):** Tool to change how a machine behaves. Requires machines that have different modes/range sets etc.
+- [x] **Rotator:** A smart tool that detects `Machine` entities. Allows rotating placed machines without breaking them or resetting their internal buffers.
+- [x] **Range Tuner:** Modifies the range of the machine. Works for: Breaker
+- [x] **State Flipper:** Turns Machines ON or OFF in an area. Three modes: ALL ON | ALL OFF | TOGGLE STATES.
+- [ ] **Configurator (name placeholder):** Tool to change how a machine behaves. Requires machines that have different modes etc.
 ---
 
 ### Machines
 - [x] **Piston:** Moves set of tiles forward. Has maximum push limit. Can move other machines if upgraded. Tiered throughout the whole progression.
-- [ ] **Placer (placeholder name):** Has 1 equipment slot. Places blocks periodically from the way it is facing. Tiered throughout the whole progression.
-- [ ] **Drill:** Has 1 equipment slot for a pickaxe or a drill. Mines a block in front of it with a fraction of the speed of the tool inside. Tiered throughout the whole progression.
-- [ ] **Pusher:** Pushes a block AND itself forwards 1 tile. It has a static push limit of itself + 1. Only goes forward if it has a block in front of it. Tiered throughout the whole progression.
+- [x] **Placer:** Has 1 equipment slot. Places blocks periodically from the way it is facing. Tiered throughout the whole progression.
+- [x] **Breaker:** Has 1 equipment slot for a pickaxe/drill or Axe (hammer in the future). Mines a block in front of it with a fraction of the speed of the tool inside. Tiered throughout the whole progression.
+- [x] **Pusher:** Pushes a block AND itself forwards 1 tile. It has a static push limit of itself + 1. Only goes forward if it has a block in front of it. Tiered throughout the whole progression.
 - [ ] **Collector:** Collects an area of items on the ground to its inventory. Speed and the area of the sweep depends on its tier. Tiered throughout the whole progression.
 - [ ] **Hopper:** Takes items from machines (and maybe chests) and forwards them. Tiered throughout the whole progression.
 - [ ] **Item Teleporter(placeholder name):** Teleports items within to a connected chest. Tiered throughout the whole progression.
@@ -65,18 +67,19 @@ Performance scales drastically. Do not expect end-game speed from a Wooden Pisto
 ### Armor
 Nothing planned yet.
 ### Accessories
-Nothing planned yet.
+- [ ] **State Switcher(placeholder name):** Placed machines will automatically be turned on or off depending on the mode of this accessory.
 
 ### To-Do
 Here is what I'm working on right now:
-- [ ] **Placer and Drill:** Those 2 machines is my next main focus.
 - [ ] **Mod Icon:** An AI generated (modified by me) placeholder is to be changed for an actual human-painted one.
-- [ ] **Piston assets:** I made them myself, but designed them with 16x16 in mind, they turned out too detailed and not matching the terraria vibe, so they were downscaled to 8x8 and upscaled back to 16x16, making them lose detail, and gain artifacts. A redesign is needed.
-- [ ] **Wrench icon:** I drew that in paint in 30 sec ngl. Need an actual design.
+- [ ] **All assets:** Placeholders need to be replaced
+- [ ] **Alpha Workshop Release** After an Icon and Assets we already have 4 machines and 3 tools. The project grew and with it bugs and UX mistakes. It's perfect time for playtesting. 
+- [ ] **Crafting and Balancing:** After release the next main focus will be on changing the materials required for each tier and balancing all machines a bit.
+- [ ] **Collector:** After that it will be time for new features like next machine Collector that picks up items on the ground and stores them inside its equipment.
 ---
 
 ## 💻 Installation (For Developers)
-This project is and most likely will remain open source :) I always wanted a mod like this, loved LuiAFK, and finally decided to do it myself. Feel free to clone it, change aspects you don't like, or add your own features.
+This project is and most likely will remain open source :) I always wanted a mod like this, loved LuiAFK, and finally decided to make one myself. Feel free to clone it, change aspects you don't like, or add your own features.
 
 1.  Clone the repo.
 2.  Modify whatever you want.
