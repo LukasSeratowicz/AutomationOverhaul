@@ -26,8 +26,13 @@ namespace AutomationOverhaul.Content.Machines.Pushers
 
             RegisterItemDrop(ModContent.ItemType<SilverPusherItem>());
 
-            TileObjectData.newTile.CopyFrom(TileObjectData.Style1x1);
+            TileObjectData.newTile.Width = 1;
+            TileObjectData.newTile.Height = 1;
+            TileObjectData.newTile.CoordinateHeights = new int[] { 16 };
+            TileObjectData.newTile.CoordinateWidth = 16;
+            TileObjectData.newTile.CoordinatePadding = 2;
             TileObjectData.newTile.StyleHorizontal = true;
+            
             TileObjectData.newTile.UsesCustomCanPlace = true;
             TileObjectData.addTile(Type);
         }

@@ -45,7 +45,10 @@ namespace AutomationOverhaul.Content.Items.Placeable
             }
         }
 
-        public override bool CanUseItem(Player player) => true;
+        public override bool CanUseItem(Player player) {
+            UpdateInventory(player);
+            return true;
+        }
 
         public override void AddRecipes() {
             CreateRecipe()
