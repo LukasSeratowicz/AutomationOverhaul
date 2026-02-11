@@ -7,9 +7,9 @@ using System;
 
 namespace AutomationOverhaul.Content.Machines.Breakers
 {
-    public class WoodenBreakerItem : ModItem
+    public class TungstenBreakerItem : ModItem
     {
-        public override string Texture => "AutomationOverhaul/Assets/Items/Breakers/WoodenBreakerItem";
+        public override string Texture => "AutomationOverhaul/Assets/Items/Breakers/TungstenBreakerItem";
 
         public override void SetStaticDefaults() { }
 
@@ -19,15 +19,14 @@ namespace AutomationOverhaul.Content.Machines.Breakers
             Item.maxStack = 99;
             Item.useTurn = true;
             Item.autoReuse = true;
-            Item.useAnimation = 15;
-            Item.useTime = 10;
             Item.useStyle = ItemUseStyleID.Swing;
             Item.consumable = true;
-            
-            Item.createTile = ModContent.TileType<WoodenBreaker>();
+            Item.createTile = ModContent.TileType<TungstenBreaker>();
             Item.placeStyle = 0;
             
-            Item.rare = ItemRarityID.White;
+            Item.useAnimation = 34;
+            Item.useTime = 34;
+            Item.rare = ItemRarityID.Blue;
         }
 
         public override void UpdateInventory(Player player) {
@@ -55,11 +54,14 @@ namespace AutomationOverhaul.Content.Machines.Breakers
 
         public override void AddRecipes() {
             CreateRecipe()
-                .AddIngredient(ItemID.Wood, 40)
-                .AddIngredient(ItemID.StoneBlock, 10)
-                .AddIngredient(ItemID.Gel, 10)
-                .AddIngredient(ItemID.FallenStar, 2)
-                .AddTile(TileID.WorkBenches)
+                .AddIngredient(ModContent.ItemType<LeadBreakerItem>())
+                .AddIngredient(ItemID.TungstenBar, 8)
+                .AddTile(TileID.HeavyWorkBench)
+                .Register();
+            CreateRecipe()
+                .AddIngredient(ModContent.ItemType<IronBreakerItem>())
+                .AddIngredient(ItemID.TungstenBar, 8)
+                .AddTile(TileID.HeavyWorkBench)
                 .Register();
         }
     }

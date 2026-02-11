@@ -7,9 +7,9 @@ using System;
 
 namespace AutomationOverhaul.Content.Machines.Breakers
 {
-    public class WoodenBreakerItem : ModItem
+    public class HellstoneBreakerItem : ModItem
     {
-        public override string Texture => "AutomationOverhaul/Assets/Items/Breakers/WoodenBreakerItem";
+        public override string Texture => "AutomationOverhaul/Assets/Items/Breakers/HellstoneBreakerItem";
 
         public override void SetStaticDefaults() { }
 
@@ -19,15 +19,14 @@ namespace AutomationOverhaul.Content.Machines.Breakers
             Item.maxStack = 99;
             Item.useTurn = true;
             Item.autoReuse = true;
-            Item.useAnimation = 15;
-            Item.useTime = 10;
             Item.useStyle = ItemUseStyleID.Swing;
             Item.consumable = true;
-            
-            Item.createTile = ModContent.TileType<WoodenBreaker>();
+            Item.createTile = ModContent.TileType<HellstoneBreaker>();
             Item.placeStyle = 0;
             
-            Item.rare = ItemRarityID.White;
+            Item.useAnimation = 26;
+            Item.useTime = 26;
+            Item.rare = ItemRarityID.LightRed;
         }
 
         public override void UpdateInventory(Player player) {
@@ -55,11 +54,9 @@ namespace AutomationOverhaul.Content.Machines.Breakers
 
         public override void AddRecipes() {
             CreateRecipe()
-                .AddIngredient(ItemID.Wood, 40)
-                .AddIngredient(ItemID.StoneBlock, 10)
-                .AddIngredient(ItemID.Gel, 10)
-                .AddIngredient(ItemID.FallenStar, 2)
-                .AddTile(TileID.WorkBenches)
+                .AddIngredient(ModContent.ItemType<MeteoriteBreakerItem>())
+                .AddIngredient(ItemID.HellstoneBar, 8)
+                .AddTile(TileID.HeavyWorkBench)
                 .Register();
         }
     }

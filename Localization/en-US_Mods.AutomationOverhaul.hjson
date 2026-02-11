@@ -470,6 +470,111 @@ Items: {
 		Tooltip: ""
 		DisplayName: Wooden Pusher Item
 	}
+
+	CopperBreakerItem: {
+		DisplayName: Copper Breaker Item
+		Tooltip: ""
+	}
+
+	TinBreakerItem: {
+		DisplayName: Tin Breaker Item
+		Tooltip: ""
+	}
+
+	ChlorophyteBreakerItem: {
+		DisplayName: Chlorophyte Breaker Item
+		Tooltip: ""
+	}
+
+	AdamantiteBreakerItem: {
+		Tooltip: ""
+		DisplayName: Adamantite Breaker Item
+	}
+
+	CobaltBreakerItem: {
+		DisplayName: Cobalt Breaker Item
+		Tooltip: ""
+	}
+
+	CrimtaneBreakerItem: {
+		DisplayName: Crimtane Breaker Item
+		Tooltip: ""
+	}
+
+	DemoniteBreakerItem: {
+		DisplayName: Demonite Breaker Item
+		Tooltip: ""
+	}
+
+	GoldBreakerItem: {
+		DisplayName: Gold Breaker Item
+		Tooltip: ""
+	}
+
+	HallowedBreakerItem: {
+		DisplayName: Hallowed Breaker Item
+		Tooltip: ""
+	}
+
+	HellstoneBreakerItem: {
+		DisplayName: Hellstone Breaker Item
+		Tooltip: ""
+	}
+
+	IronBreakerItem: {
+		DisplayName: Iron Breaker Item
+		Tooltip: ""
+	}
+
+	LeadBreakerItem: {
+		DisplayName: Lead Breaker Item
+		Tooltip: ""
+	}
+
+	LuminiteBreakerItem: {
+		DisplayName: Luminite Breaker Item
+		Tooltip: ""
+	}
+
+	MeteoriteBreakerItem: {
+		DisplayName: Meteorite Breaker Item
+		Tooltip: ""
+	}
+
+	MythrilBreakerItem: {
+		DisplayName: Mythril Breaker Item
+		Tooltip: ""
+	}
+
+	OrichalcumBreakerItem: {
+		DisplayName: Orichalcum Breaker Item
+		Tooltip: ""
+	}
+
+	PalladiumBreakerItem: {
+		DisplayName: Palladium Breaker Item
+		Tooltip: ""
+	}
+
+	PlatinumBreakerItem: {
+		DisplayName: Platinum Breaker Item
+		Tooltip: ""
+	}
+
+	SilverBreakerItem: {
+		DisplayName: Silver Breaker Item
+		Tooltip: ""
+	}
+
+	TitaniumBreakerItem: {
+		DisplayName: Titanium Breaker Item
+		Tooltip: ""
+	}
+
+	TungstenBreakerItem: {
+		DisplayName: Tungsten Breaker Item
+		Tooltip: ""
+	}
 }
 
 Configs: {
