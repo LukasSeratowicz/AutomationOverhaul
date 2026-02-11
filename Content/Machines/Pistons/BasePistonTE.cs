@@ -100,7 +100,14 @@ namespace AutomationOverhaul.Content.Machines.Pistons
                 Tile srcTile = Main.tile[srcX, srcY];
                 Tile destTile = Main.tile[destX, destY];
 
+                ushort destWall = destTile.WallType;
+                byte destWallColor = destTile.WallColor;
+
                 destTile.CopyFrom(srcTile);
+
+                destTile.WallType = destWall;
+                destTile.WallColor = destWallColor;
+
                 srcTile.ClearTile();
 
                 if (TileEntity.ByPosition.TryGetValue(new Point16(srcX, srcY), out TileEntity srcTE)) {
@@ -109,6 +116,10 @@ namespace AutomationOverhaul.Content.Machines.Pistons
 
                 WorldGen.SquareTileFrame(destX, destY, true);
                 WorldGen.SquareTileFrame(srcX, srcY, true);
+
+                WorldGen.SquareWallFrame(destX, destY, true);
+                WorldGen.SquareWallFrame(srcX, srcY, true);
+                
                 NetMessage.SendTileSquare(-1, destX, destY, 3);
                 NetMessage.SendTileSquare(-1, srcX, srcY, 3);
             }

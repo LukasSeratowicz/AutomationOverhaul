@@ -348,7 +348,7 @@ Items: {
 
 	AdamantitePlacerItem: {
 		DisplayName: Adamantite Placer Item
-		Tooltip: 
+		Tooltip:
 			'''
 			Periodically places blocks
 			You need to put blocks into it first.
@@ -357,7 +357,7 @@ Items: {
 
 	ChlorophytePlacerItem: {
 		DisplayName: Chlorophyte Placer Item
-		Tooltip: 
+		Tooltip:
 			'''
 			Periodically places blocks
 			You need to put blocks into it first.
@@ -366,7 +366,7 @@ Items: {
 
 	CobaltPlacerItem: {
 		DisplayName: Cobalt Placer Item
-		Tooltip: 
+		Tooltip:
 			'''
 			Periodically places blocks
 			You need to put blocks into it first.
@@ -375,7 +375,7 @@ Items: {
 
 	CopperPlacerItem: {
 		DisplayName: Copper Placer Item
-		Tooltip: 
+		Tooltip:
 			'''
 			Periodically places blocks
 			You need to put blocks into it first.
@@ -384,7 +384,7 @@ Items: {
 
 	CrimtanePlacerItem: {
 		DisplayName: Crimtane Placer Item
-		Tooltip: 
+		Tooltip:
 			'''
 			Periodically places blocks
 			You need to put blocks into it first.
@@ -393,7 +393,7 @@ Items: {
 
 	DemonitePlacerItem: {
 		DisplayName: Demonite Placer Item
-		Tooltip: 
+		Tooltip:
 			'''
 			Periodically places blocks
 			You need to put blocks into it first.
@@ -402,7 +402,7 @@ Items: {
 
 	GoldPlacerItem: {
 		DisplayName: Gold Placer Item
-		Tooltip: 
+		Tooltip:
 			'''
 			Periodically places blocks
 			You need to put blocks into it first.
@@ -411,7 +411,7 @@ Items: {
 
 	HallowedPlacerItem: {
 		DisplayName: Hallowed Placer Item
-		Tooltip: 
+		Tooltip:
 			'''
 			Periodically places blocks
 			You need to put blocks into it first.
@@ -420,7 +420,7 @@ Items: {
 
 	HellstonePlacerItem: {
 		DisplayName: Hellstone Placer Item
-		Tooltip: 
+		Tooltip:
 			'''
 			Periodically places blocks
 			You need to put blocks into it first.
@@ -429,7 +429,7 @@ Items: {
 
 	IronPlacerItem: {
 		DisplayName: Iron Placer Item
-		Tooltip: 
+		Tooltip:
 			'''
 			Periodically places blocks
 			You need to put blocks into it first.
@@ -438,7 +438,7 @@ Items: {
 
 	LeadPlacerItem: {
 		DisplayName: Lead Placer Item
-		Tooltip: 
+		Tooltip:
 			'''
 			Periodically places blocks
 			You need to put blocks into it first.
@@ -447,7 +447,7 @@ Items: {
 
 	LuminitePlacerItem: {
 		DisplayName: Luminite Placer Item
-		Tooltip: 
+		Tooltip:
 			'''
 			Periodically places blocks
 			You need to put blocks into it first.
@@ -456,7 +456,7 @@ Items: {
 
 	MeteoritePlacerItem: {
 		DisplayName: Meteorite Placer Item
-		Tooltip: 
+		Tooltip:
 			'''
 			Periodically places blocks
 			You need to put blocks into it first.
@@ -465,7 +465,7 @@ Items: {
 
 	MythrilPlacerItem: {
 		DisplayName: Mythril Placer Item
-		Tooltip: 
+		Tooltip:
 			'''
 			Periodically places blocks
 			You need to put blocks into it first.
@@ -474,7 +474,7 @@ Items: {
 
 	OrichalcumPlacerItem: {
 		DisplayName: Orichalcum Placer Item
-		Tooltip: 
+		Tooltip:
 			'''
 			Periodically places blocks
 			You need to put blocks into it first.
@@ -483,7 +483,7 @@ Items: {
 
 	PalladiumPlacerItem: {
 		DisplayName: Palladium Placer Item
-		Tooltip: 
+		Tooltip:
 			'''
 			Periodically places blocks
 			You need to put blocks into it first.
@@ -492,7 +492,7 @@ Items: {
 
 	PlatinumPlacerItem: {
 		DisplayName: Platinum Placer Item
-		Tooltip: 
+		Tooltip:
 			'''
 			Periodically places blocks
 			You need to put blocks into it first.
@@ -501,7 +501,7 @@ Items: {
 
 	SilverPlacerItem: {
 		DisplayName: Silver Placer Item
-		Tooltip: 
+		Tooltip:
 			'''
 			Periodically places blocks
 			You need to put blocks into it first.
@@ -510,7 +510,7 @@ Items: {
 
 	TinPlacerItem: {
 		DisplayName: Tin Placer Item
-		Tooltip: 
+		Tooltip:
 			'''
 			Periodically places blocks
 			You need to put blocks into it first.
@@ -519,7 +519,7 @@ Items: {
 
 	TitaniumPlacerItem: {
 		DisplayName: Titanium Placer Item
-		Tooltip: 
+		Tooltip:
 			'''
 			Periodically places blocks
 			You need to put blocks into it first.
@@ -528,7 +528,7 @@ Items: {
 
 	TungstenPlacerItem: {
 		DisplayName: Tungsten Placer Item
-		Tooltip: 
+		Tooltip:
 			'''
 			Periodically places blocks
 			You need to put blocks into it first.

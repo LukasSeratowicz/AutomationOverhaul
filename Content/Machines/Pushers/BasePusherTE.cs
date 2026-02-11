@@ -95,7 +95,14 @@ namespace AutomationOverhaul.Content.Machines.Pushers
             
             if (destTile.HasTile) WorldGen.KillTile(destX, destY, false, false, true);
 
+            ushort destWall = destTile.WallType;
+            byte destWallColor = destTile.WallColor;
+
             destTile.CopyFrom(targetTile);
+
+            destTile.WallType = destWall;
+            destTile.WallColor = destWallColor;
+
             targetTile.ClearTile();
 
             if (TileEntity.ByPosition.TryGetValue(new Point16(targetX, targetY), out TileEntity te)) {
@@ -103,7 +110,13 @@ namespace AutomationOverhaul.Content.Machines.Pushers
             }
 
             Tile myTile = Main.tile[myX, myY];
+            ushort targetWall = targetTile.WallType;
+            byte targetWallColor = targetTile.WallColor;
+
             targetTile.CopyFrom(myTile);
+
+            targetTile.WallType = targetWall;
+            targetTile.WallColor = targetWallColor;
             myTile.ClearTile();
 
             MoveTileEntity(this, targetX, targetY);
@@ -112,6 +125,10 @@ namespace AutomationOverhaul.Content.Machines.Pushers
             WorldGen.SquareTileFrame(destX, destY, true);
             WorldGen.SquareTileFrame(targetX, targetY, true);
             WorldGen.SquareTileFrame(myX, myY, true);
+            
+            WorldGen.SquareWallFrame(destX, destY, true);
+            WorldGen.SquareWallFrame(targetX, targetY, true);
+            WorldGen.SquareWallFrame(myX, myY, true);
 
             NetMessage.SendTileSquare(-1, destX, destY, 1);
             NetMessage.SendTileSquare(-1, targetX, targetY, 1);
