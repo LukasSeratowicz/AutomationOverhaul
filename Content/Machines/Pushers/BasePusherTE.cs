@@ -37,6 +37,20 @@ namespace AutomationOverhaul.Content.Machines.Pushers
                 CooldownTimer = MaxCooldown;
                 return; 
             }
+            
+            Tile destTile = Main.tile[destX, destY];
+
+            if (destTile.HasTile && !Main.tileCut[destTile.TileType]) {
+                CooldownTimer = MaxCooldown;
+                return; 
+            }
+
+            if (!CanPushMachines) {
+                if (TileEntity.ByPosition.ContainsKey(new Point16(targetX, targetY))) {
+                    CooldownTimer = MaxCooldown;
+                    return;
+                }
+            }
 
             if (CooldownTimer > 0) {
                 CooldownTimer--;

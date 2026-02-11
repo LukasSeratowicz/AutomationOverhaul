@@ -203,7 +203,11 @@ Items: {
 	}
 
 	WoodenPlacerItem: {
-		Tooltip: ""
+		Tooltip:
+			'''
+			Periodically places blocks
+			You need to put blocks into it first.
+			'''
 		DisplayName: Wooden Placer Item
 	}
 
@@ -344,107 +348,191 @@ Items: {
 
 	AdamantitePlacerItem: {
 		DisplayName: Adamantite Placer Item
-		Tooltip: ""
+		Tooltip: 
+			'''
+			Periodically places blocks
+			You need to put blocks into it first.
+			'''
 	}
 
 	ChlorophytePlacerItem: {
 		DisplayName: Chlorophyte Placer Item
-		Tooltip: ""
+		Tooltip: 
+			'''
+			Periodically places blocks
+			You need to put blocks into it first.
+			'''
 	}
 
 	CobaltPlacerItem: {
 		DisplayName: Cobalt Placer Item
-		Tooltip: ""
+		Tooltip: 
+			'''
+			Periodically places blocks
+			You need to put blocks into it first.
+			'''
 	}
 
 	CopperPlacerItem: {
 		DisplayName: Copper Placer Item
-		Tooltip: ""
+		Tooltip: 
+			'''
+			Periodically places blocks
+			You need to put blocks into it first.
+			'''
 	}
 
 	CrimtanePlacerItem: {
 		DisplayName: Crimtane Placer Item
-		Tooltip: ""
+		Tooltip: 
+			'''
+			Periodically places blocks
+			You need to put blocks into it first.
+			'''
 	}
 
 	DemonitePlacerItem: {
 		DisplayName: Demonite Placer Item
-		Tooltip: ""
+		Tooltip: 
+			'''
+			Periodically places blocks
+			You need to put blocks into it first.
+			'''
 	}
 
 	GoldPlacerItem: {
 		DisplayName: Gold Placer Item
-		Tooltip: ""
+		Tooltip: 
+			'''
+			Periodically places blocks
+			You need to put blocks into it first.
+			'''
 	}
 
 	HallowedPlacerItem: {
 		DisplayName: Hallowed Placer Item
-		Tooltip: ""
+		Tooltip: 
+			'''
+			Periodically places blocks
+			You need to put blocks into it first.
+			'''
 	}
 
 	HellstonePlacerItem: {
 		DisplayName: Hellstone Placer Item
-		Tooltip: ""
+		Tooltip: 
+			'''
+			Periodically places blocks
+			You need to put blocks into it first.
+			'''
 	}
 
 	IronPlacerItem: {
 		DisplayName: Iron Placer Item
-		Tooltip: ""
+		Tooltip: 
+			'''
+			Periodically places blocks
+			You need to put blocks into it first.
+			'''
 	}
 
 	LeadPlacerItem: {
 		DisplayName: Lead Placer Item
-		Tooltip: ""
+		Tooltip: 
+			'''
+			Periodically places blocks
+			You need to put blocks into it first.
+			'''
 	}
 
 	LuminitePlacerItem: {
 		DisplayName: Luminite Placer Item
-		Tooltip: ""
+		Tooltip: 
+			'''
+			Periodically places blocks
+			You need to put blocks into it first.
+			'''
 	}
 
 	MeteoritePlacerItem: {
 		DisplayName: Meteorite Placer Item
-		Tooltip: ""
+		Tooltip: 
+			'''
+			Periodically places blocks
+			You need to put blocks into it first.
+			'''
 	}
 
 	MythrilPlacerItem: {
 		DisplayName: Mythril Placer Item
-		Tooltip: ""
+		Tooltip: 
+			'''
+			Periodically places blocks
+			You need to put blocks into it first.
+			'''
 	}
 
 	OrichalcumPlacerItem: {
 		DisplayName: Orichalcum Placer Item
-		Tooltip: ""
+		Tooltip: 
+			'''
+			Periodically places blocks
+			You need to put blocks into it first.
+			'''
 	}
 
 	PalladiumPlacerItem: {
 		DisplayName: Palladium Placer Item
-		Tooltip: ""
+		Tooltip: 
+			'''
+			Periodically places blocks
+			You need to put blocks into it first.
+			'''
 	}
 
 	PlatinumPlacerItem: {
 		DisplayName: Platinum Placer Item
-		Tooltip: ""
+		Tooltip: 
+			'''
+			Periodically places blocks
+			You need to put blocks into it first.
+			'''
 	}
 
 	SilverPlacerItem: {
 		DisplayName: Silver Placer Item
-		Tooltip: ""
+		Tooltip: 
+			'''
+			Periodically places blocks
+			You need to put blocks into it first.
+			'''
 	}
 
 	TinPlacerItem: {
 		DisplayName: Tin Placer Item
-		Tooltip: ""
+		Tooltip: 
+			'''
+			Periodically places blocks
+			You need to put blocks into it first.
+			'''
 	}
 
 	TitaniumPlacerItem: {
 		DisplayName: Titanium Placer Item
-		Tooltip: ""
+		Tooltip: 
+			'''
+			Periodically places blocks
+			You need to put blocks into it first.
+			'''
 	}
 
 	TungstenPlacerItem: {
 		DisplayName: Tungsten Placer Item
-		Tooltip: ""
+		Tooltip: 
+			'''
+			Periodically places blocks
+			You need to put blocks into it first.
+			'''
 	}
 
 	WoodenBreakerItem: {
@@ -467,113 +555,302 @@ Items: {
 	}
 
 	WoodenPusherItem: {
-		Tooltip: ""
+		Tooltip: Periodically Pushes itself and a tile forwards.
 		DisplayName: Wooden Pusher Item
 	}
 
 	CopperBreakerItem: {
 		DisplayName: Copper Breaker Item
-		Tooltip: ""
+		Tooltip:
+			'''
+			Periodically breaks blocks.
+			You have to put a pickaxe into it.
+			'''
 	}
 
 	TinBreakerItem: {
 		DisplayName: Tin Breaker Item
-		Tooltip: ""
+		Tooltip:
+			'''
+			Periodically breaks blocks.
+			You have to put a pickaxe into it.
+			'''
 	}
 
 	ChlorophyteBreakerItem: {
 		DisplayName: Chlorophyte Breaker Item
-		Tooltip: ""
+		Tooltip:
+			'''
+			Periodically breaks blocks.
+			You have to put a pickaxe into it.
+			'''
 	}
 
 	AdamantiteBreakerItem: {
-		Tooltip: ""
+		Tooltip:
+			'''
+			Periodically breaks blocks.
+			You have to put a pickaxe into it.
+			'''
 		DisplayName: Adamantite Breaker Item
 	}
 
 	CobaltBreakerItem: {
 		DisplayName: Cobalt Breaker Item
-		Tooltip: ""
+		Tooltip:
+			'''
+			Periodically breaks blocks.
+			You have to put a pickaxe into it.
+			'''
 	}
 
 	CrimtaneBreakerItem: {
 		DisplayName: Crimtane Breaker Item
-		Tooltip: ""
+		Tooltip:
+			'''
+			Periodically breaks blocks.
+			You have to put a pickaxe into it.
+			'''
 	}
 
 	DemoniteBreakerItem: {
 		DisplayName: Demonite Breaker Item
-		Tooltip: ""
+		Tooltip:
+			'''
+			Periodically breaks blocks.
+			You have to put a pickaxe into it.
+			'''
 	}
 
 	GoldBreakerItem: {
 		DisplayName: Gold Breaker Item
-		Tooltip: ""
+		Tooltip:
+			'''
+			Periodically breaks blocks.
+			You have to put a pickaxe into it.
+			'''
 	}
 
 	HallowedBreakerItem: {
 		DisplayName: Hallowed Breaker Item
-		Tooltip: ""
+		Tooltip:
+			'''
+			Periodically breaks blocks.
+			You have to put a pickaxe into it.
+			'''
 	}
 
 	HellstoneBreakerItem: {
 		DisplayName: Hellstone Breaker Item
-		Tooltip: ""
+		Tooltip:
+			'''
+			Periodically breaks blocks.
+			You have to put a pickaxe into it.
+			'''
 	}
 
 	IronBreakerItem: {
 		DisplayName: Iron Breaker Item
-		Tooltip: ""
+		Tooltip:
+			'''
+			Periodically breaks blocks.
+			You have to put a pickaxe into it.
+			'''
 	}
 
 	LeadBreakerItem: {
 		DisplayName: Lead Breaker Item
-		Tooltip: ""
+		Tooltip:
+			'''
+			Periodically breaks blocks.
+			You have to put a pickaxe into it.
+			'''
 	}
 
 	LuminiteBreakerItem: {
 		DisplayName: Luminite Breaker Item
-		Tooltip: ""
+		Tooltip:
+			'''
+			Periodically breaks blocks.
+			You have to put a pickaxe into it.
+			'''
 	}
 
 	MeteoriteBreakerItem: {
 		DisplayName: Meteorite Breaker Item
-		Tooltip: ""
+		Tooltip:
+			'''
+			Periodically breaks blocks.
+			You have to put a pickaxe into it.
+			'''
 	}
 
 	MythrilBreakerItem: {
 		DisplayName: Mythril Breaker Item
-		Tooltip: ""
+		Tooltip:
+			'''
+			Periodically breaks blocks.
+			You have to put a pickaxe into it.
+			'''
 	}
 
 	OrichalcumBreakerItem: {
 		DisplayName: Orichalcum Breaker Item
-		Tooltip: ""
+		Tooltip:
+			'''
+			Periodically breaks blocks.
+			You have to put a pickaxe into it.
+			'''
 	}
 
 	PalladiumBreakerItem: {
 		DisplayName: Palladium Breaker Item
-		Tooltip: ""
+		Tooltip:
+			'''
+			Periodically breaks blocks.
+			You have to put a pickaxe into it.
+			'''
 	}
 
 	PlatinumBreakerItem: {
 		DisplayName: Platinum Breaker Item
-		Tooltip: ""
+		Tooltip:
+			'''
+			Periodically breaks blocks.
+			You have to put a pickaxe into it.
+			'''
 	}
 
 	SilverBreakerItem: {
 		DisplayName: Silver Breaker Item
-		Tooltip: ""
+		Tooltip:
+			'''
+			Periodically breaks blocks.
+			You have to put a pickaxe into it.
+			'''
 	}
 
 	TitaniumBreakerItem: {
 		DisplayName: Titanium Breaker Item
-		Tooltip: ""
+		Tooltip:
+			'''
+			Periodically breaks blocks.
+			You have to put a pickaxe into it.
+			'''
 	}
 
 	TungstenBreakerItem: {
 		DisplayName: Tungsten Breaker Item
-		Tooltip: ""
+		Tooltip:
+			'''
+			Periodically breaks blocks.
+			You have to put a pickaxe into it.
+			'''
+	}
+
+	AdamantitePusherItem: {
+		DisplayName: Adamantite Pusher Item
+		Tooltip: Pushes itself and a tile in front forwards.
+	}
+
+	ChlorophytePusherItem: {
+		DisplayName: Chlorophyte Pusher Item
+		Tooltip: Pushes itself and a tile in front forwards.
+	}
+
+	CobaltPusherItem: {
+		DisplayName: Cobalt Pusher Item
+		Tooltip: Pushes itself and a tile in front forwards.
+	}
+
+	CopperPusherItem: {
+		DisplayName: Copper Pusher Item
+		Tooltip: Pushes itself and a tile in front forwards.
+	}
+
+	CrimtanePusherItem: {
+		DisplayName: Crimtane Pusher Item
+		Tooltip: Pushes itself and a tile in front forwards.
+	}
+
+	DemonitePusherItem: {
+		DisplayName: Demonite Pusher Item
+		Tooltip: Pushes itself and a tile in front forwards.
+	}
+
+	GoldPusherItem: {
+		DisplayName: Gold Pusher Item
+		Tooltip: Pushes itself and a tile in front forwards.
+	}
+
+	HallowedPusherItem: {
+		DisplayName: Hallowed Pusher Item
+		Tooltip: Pushes itself and a tile in front forwards.
+	}
+
+	HellstonePusherItem: {
+		DisplayName: Hellstone Pusher Item
+		Tooltip: Pushes itself and a tile in front forwards.
+	}
+
+	IronPusherItem: {
+		DisplayName: Iron Pusher Item
+		Tooltip: Pushes itself and a tile in front forwards.
+	}
+
+	LeadPusherItem: {
+		DisplayName: Lead Pusher Item
+		Tooltip: Pushes itself and a tile in front forwards.
+	}
+
+	LuminitePusherItem: {
+		DisplayName: Luminite Pusher Item
+		Tooltip: Pushes itself and a tile in front forwards.
+	}
+
+	MeteoritePusherItem: {
+		DisplayName: Meteorite Pusher Item
+		Tooltip: Pushes itself and a tile in front forwards.
+	}
+
+	MythrilPusherItem: {
+		DisplayName: Mythril Pusher Item
+		Tooltip: Pushes itself and a tile in front forwards.
+	}
+
+	OrichalcumPusherItem: {
+		DisplayName: Orichalcum Pusher Item
+		Tooltip: Pushes itself and a tile in front forwards.
+	}
+
+	PalladiumPusherItem: {
+		DisplayName: Palladium Pusher Item
+		Tooltip: Pushes itself and a tile in front forwards.
+	}
+
+	PlatinumPusherItem: {
+		DisplayName: Platinum Pusher Item
+		Tooltip: Pushes itself and a tile in front forwards.
+	}
+
+	SilverPusherItem: {
+		DisplayName: Silver Pusher Item
+		Tooltip: Pushes itself and a tile in front forwards.
+	}
+
+	TinPusherItem: {
+		DisplayName: Tin Pusher Item
+		Tooltip: Pushes itself and a tile in front forwards.
+	}
+
+	TitaniumPusherItem: {
+		DisplayName: Titanium Pusher Item
+		Tooltip: Pushes itself and a tile in front forwards.
+	}
+
+	TungstenPusherItem: {
+		DisplayName: Tungsten Pusher Item
+		Tooltip: Pushes itself and a tile in front forwards.
 	}
 }
 

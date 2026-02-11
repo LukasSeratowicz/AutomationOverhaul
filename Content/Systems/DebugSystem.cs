@@ -8,6 +8,7 @@ using Terraria.GameContent;
 using AutomationOverhaul.Content.Machines.Placers;
 using AutomationOverhaul.Content.Machines.Pistons;
 using AutomationOverhaul.Content.Machines.Breakers;
+using AutomationOverhaul.Content.Machines.Pushers;
 using AutomationOverhaul.Core.Abstracts;
 
 namespace AutomationOverhaul.Content.Systems
@@ -74,6 +75,7 @@ namespace AutomationOverhaul.Content.Systems
                             color = Color.Lime; // Working (Ready to push)
                         }
                     }
+                    // --- BREAKER LOGIC ---
                     else if (machine is BaseBreakerTE breaker) {
                         int range = System.Math.Min(breaker.CurrentRangeSetting, breaker.GetMaxPossibleRange());
                         int breakX = machine.Position.X + (dirX * range);
@@ -86,6 +88,29 @@ namespace AutomationOverhaul.Content.Systems
                             color = Color.Orange; // Waiting (No Block)
                         } else {
                             color = Color.Lime; // Working (Mining)
+                        }
+                    }
+                    // --- PUSHER LOGIC ---
+                    else if (machine is BasePusherTE pusher) {
+                        int destX = machine.Position.X + (dirX * 2);
+                        int destY = machine.Position.Y + (dirY * 2);
+                        
+                        bool destHasTile = WorldGen.InWorld(destX, destY) && Main.tile[destX, destY].HasTile;
+                        bool destIsBlocked = destHasTile && !Main.tileCut[Main.tile[destX, destY].TileType];
+                        
+                        bool targetIsMachine = TileEntity.ByPosition.ContainsKey(new Point16(targetX, targetY));
+
+                        if (!targetHasTile) {
+                            color = Color.Cyan; // Idle
+                        } 
+                        else if (destIsBlocked) {
+                            color = Color.Orange; // Blocked by wall
+                        } 
+                        else if (targetIsMachine && !pusher.CanPushMachines) {
+                            color = Color.Purple; // Blocked by Machine (Tier too low)
+                        } 
+                        else {
+                            color = Color.Lime; // Working
                         }
                     }
                 }
